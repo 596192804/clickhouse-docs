@@ -46,8 +46,6 @@ const config = {
             'reference/introduction',
             'reference/whats-new',
             'integrations/kafka/code',
-            '/ru/',
-            '/zh/',
           ],
         },
         theme: {

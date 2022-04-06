@@ -30,7 +30,7 @@ to get up and running with ClickHouse:
 
 1. The ClickHouse server listens for HTTP clients on port 8123 by default. There is a built-in UI for running SQL queries at <a href="http://127.0.0.1:8123/play" target="_blank">http://127.0.0.1:8123/play</a> (change the hostname accordingly). 
 
-    <img src={require('./images/quickstart_01.png').default} class="image" alt="The Play UI" />
+    <img src={require('../static/images/quickstart_01.png').default} class="image" alt="The Play UI" />
 
     :::note
     The default username for accessing ClickHouse is **default** and there is no password defined initially for the 
@@ -45,7 +45,7 @@ to get up and running with ClickHouse:
 
 3. Click the **RUN** button and the response is displayed in the lower portion of the Play UI:
 
-    <img src={require('./images/quickstart_02.png').default} class="image" alt="View the results" />
+    <img src={require('../static/images/quickstart_02.png').default} class="image" alt="View the results" />
 
 ## 3. Create a Table 
 
@@ -124,7 +124,7 @@ rows at once. (Don't worry - ClickHouse can easily handle that type of volume!)
     SELECT * FROM helloworld.my_first_table
     ```
     You should see the four rows of data that were inserted:
-    <img src={require('./images/quickstart_03.png').default} class="image" alt="New rows inserted" />
+    <img src={require('../static/images/quickstart_03.png').default} class="image" alt="New rows inserted" />
 
 
 ## 5. The ClickHouse Client 
@@ -209,7 +209,7 @@ the timestamp of the event.
     ```
 
 3. Notice the new rows appear in the table now:
-    <img src={require('./images/quickstart_04.png').default} class="image" alt="New rows from CSV file" />
+    <img src={require('../static/images/quickstart_04.png').default} class="image" alt="New rows from CSV file" />
 
 ## What's Next?
 
