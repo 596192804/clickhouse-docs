@@ -588,8 +588,6 @@ const config = {
   
             if (existingPath.includes('/en/')) {
               return [
-                existingPath.replaceAll('/en/', '/ja/'),
-                existingPath.replaceAll('/en/', '/ru/'),
                 existingPath.replaceAll('/en/', '/zh/'),
               ];
             } 
