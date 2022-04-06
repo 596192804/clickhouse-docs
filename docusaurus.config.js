@@ -78,6 +78,21 @@ const config = {
             label: 'Docs',
           },
           {
+            type: 'dropdown',
+            label: 'Language',
+            position: 'right',
+            items: [
+              {
+                to: '/intro',
+                label: 'English'
+              },
+              {
+                to: '/ru/',
+                label: 'Russian'
+              }
+            ]
+          },
+          {
             type: 'search',
             position: 'right',
           },
