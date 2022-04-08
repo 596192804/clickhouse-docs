@@ -4,16 +4,13 @@ const clickhouseTheme = require('prism-react-renderer/themes/vsLight');
 const config = {
   title: 'ClickHouse Docs',
   tagline: 'Documentation, quick starts, user guides, technical references, FAQs and more...',
-  url: 'https://clickhouse.com/',
+  url: 'http://localhost:3000/',
   baseUrl: '/docs/',
   onBrokenLinks: 'error',
   onBrokenMarkdownLinks: 'ignore',
   favicon: 'img/favicon.ico',
   organizationName: 'ClickHouse', 
   projectName: 'clickhouse-docs', 
-
-
-  themes: ['@docusaurus/theme-live-codeblock'],
 
   presets: [
     [
@@ -57,7 +54,8 @@ const config = {
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
+    (
+      {
       disableSwitch: true,
       autoCollapseSidebarCategories: true,
       navbar: {
@@ -176,6 +174,35 @@ const config = {
       colorMode: {
         disableSwitch: true,
       },
+      algolia: {
+        appId: 'BH4D9OD16A',
+        apiKey: 'e239649803024433599de47a53b2d416',
+        indexName: 'clickhouse-docs',
+        contextualSearch: true,
+        searchParameters: {},
+        searchPagePath: 'search',
+      },
+/*      typesense: {
+        typesenseCollectionName: 'docs', // Replace with your own doc site's name. Should match the collection name in the scraper settings.
+        
+        typesenseServerConfig: {
+          nodes: [
+            {
+              host: 'localhost',
+              port: 8108,
+              protocol: 'http',
+            },
+          ],
+          apiKey: 'xyz',
+        },
+  
+        // Optional: Typesense search parameters: https://typesense.org/docs/0.21.0/api/documents.md#search-parameters
+        typesenseSearchParameters: {},
+  
+        // Optional
+        contextualSearch: true,
+      },
+*/
 /*      announcementBar: {
         id: 'support_us',
         content:
@@ -189,15 +216,15 @@ const config = {
 
     plugins: [
       'remark-docusaurus-tabs',
-      [
-        require.resolve('docusaurus-lunr-search'),
-        {
-          excludeRoutes: [
-            'docs/whats-new/changelog/**/*', // exclude changelogs from indexing
-        ]
-        },
-      ],
-      [
+      // [
+      //   require.resolve('docusaurus-lunr-search'),
+      //   {
+      //     excludeRoutes: [
+      //       'docs/whats-new/changelog/**/*', // exclude changelogs from indexing
+      //   ]
+      //   },
+      // ],
+/*      [
         '@docusaurus/plugin-client-redirects',
         {
           redirects: [
@@ -595,6 +622,7 @@ const config = {
           },
         },
       ]
+*/
     ],    
 };
 

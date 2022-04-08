@@ -1,0 +1,8 @@
+position: 1 
+label: 'предисловие'
+collapsible: true 
+collapsed: true 
+link:
+  type: generated-index
+  title: предисловие
+  slug: /ru/introduction

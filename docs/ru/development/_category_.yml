@@ -1,0 +1,8 @@
+position: 100
+label: 'Pазработчиков'
+collapsible: true 
+collapsed: true 
+link:
+  type: generated-index
+  title: Pазработчиков
+  slug: /ru/development
